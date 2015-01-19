@@ -1,71 +1,71 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Synology DiskStation使用说明</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/jumbotron.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Synology DiskStation使用说明</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/jumbotron.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
 
-	<body>
+    <body>
 
-		<div class="container">
-			<div class="header">
-				<ul class="nav nav-pills pull-right">
-					<li><a href="index.html">主页</a></li>
-					<li><a href="http://guoyi.synology.me:5000">HTTP</a></li>
-					<li><a href="ftp://guoyi.synology.me">FTP</a></li>
-				</ul>
-				<h1>Synology</h1>
-			</div>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="http://guoyi.synology.me:5000">HTTP</a></li>
+                    <li><a href="ftp://guoyi.synology.me">FTP</a></li>
+                </ul>
+                <h1>Synology</h1>
+            </div>
 
-			<div class="panel panel-success" id="instruction">
-				<div class="panel-heading">说明</div>
-				<div class="panel-body">
-			  		Mac OS X（即苹果系统）如Windows一样，也支持通过FTP, HTTP, 以及WebDAV三种不同方式访问服务器。由于WebDAV本身具备安全性高，传输速度快，及支持所有文件操作的优点，也因为Mac OS X在不需进行任何配置的情况下即可顺利进行WebDAV访问，故本章节只介绍如何在Mac OS X环境下通过WebDAV访问服务器。
-				</div>
-			</div>
+            <div class="panel panel-success" id="instruction">
+                <div class="panel-heading">说明</div>
+                <div class="panel-body">
+                    Mac OS X（即苹果系统）如Windows一样，也支持通过FTP, HTTP, 以及WebDAV三种不同方式访问服务器。由于WebDAV本身具备安全性高，传输速度快，及支持所有文件操作的优点，也因为Mac OS X在不需进行任何配置的情况下即可顺利进行WebDAV访问，故本章节只介绍如何在Mac OS X环境下通过WebDAV访问服务器。
+                </div>
+            </div>
 
-			<ol>
-				<li>在桌面环境下，左键单击<img src="images/mac/1.png" alt="App Store" class="inline-pic"><span class="label label-success">Finder</span>。</li>
-				<img src="images/mac/2.png" class="offline-pic">
-				<li>在顶部<span class="label label-success">菜单栏</span>单击<span class="label label-success">前往</span>，然后单击<span class="label label-success">连接服务器</span>。</li>
-				<img src="images/mac/3.png" class="offline-pic">
-				<li>在弹出窗口输入服务器WebDAV地址，并单击<span class="label label-success">连接</span>登录。</li>
-				<div class="well well-sm">http://guoyi.synology.me:5005</div>
-				<div class="alert alert-success" role="alert">注：如您使用个人计算机登录，在输完服务器地址后可单击地址栏右边的<span class="label label-primary">+</span>以将该地址添加至下方<span class="label label-primary">个人收藏服务器</span>列表。如此，您的服务器地址将被保存，以免去您下次登录重新输入地址之劳。反之，如您使用公共计算机，请切忌如此做！</div>
-				<img src="images/mac/4.png" class="offline-pic">
-				<li>在弹出窗口确保选择<span class="label label-success">注册用户</span>，输入您的用户名和密码，并单击<span class="label label-success">连接</span>登录。</li>
-				<div class="alert alert-success" role="alert">注：如您使用个人计算机登录，可考虑选中<span class="label label-primary">在我的钥匙串中记住此密码</span>。如此，您的用户名和密码将被保存，以免去您下次登录重新输入密码之劳。反之，如您使用公共计算机，请切忌如此做！</div>
-				<img src="images/mac/5.png" class="offline-pic">
-				<li>如连接成功，您可看到如下图所示窗口。至此，您已成功登录，并可在授权文件夹下进行所有文件操作。如未看到所示窗口，请双击桌面上的服务器快捷方式以打开。例如在下图中，该快捷方式被自动命名为<span class="label label-success">guoyi.synology.me</span>。</li>
-				<img src="images/mac/6.png" class="offline-pic">
-				<li><strong>当您完成工作，请务必如下图所示断开连接！</strong></li>
-				<div class="alert alert-success" role="alert">
-					<p>
-						在窗口左侧<span class="label label-primary">侧边栏</span>找到服务器，并单击<img src="images/mac/8.png" alt="Eject" class="inline-pic" id="logo">以将其推出。
-					</p>
-					<p><span class="label label-primary">或</span></p>
-					<p>
-						右键单击桌面上的服务器快捷方式（下图为<span class="label label-primary">guoyi.synology.me</span>），并单击<span class="label label-primary">推出"<em><服务器名></em>"</span>（下图为<span class="label label-primary">推出"guoyi.synology.me"</span>）。
-					</p>
-				</div>
-				<img src="images/mac/7.png" class="offline-pic">
-			</ol>
-
-
-			<div class="footer">
-				<p>Copyright © 2014 Yi Guo Programmed.</p>
-			</div>
-		</div>
+            <ol>
+                <li>在桌面环境下，左键单击<img src="images/mac/1.png" alt="App Store" class="inline-pic"><span class="label label-success">Finder</span>。</li>
+                <img src="images/mac/2.png" class="offline-pic">
+                <li>在顶部<span class="label label-success">菜单栏</span>单击<span class="label label-success">前往</span>，然后单击<span class="label label-success">连接服务器</span>。</li>
+                <img src="images/mac/3.png" class="offline-pic">
+                <li>在弹出窗口输入服务器WebDAV地址，并单击<span class="label label-success">连接</span>登录。</li>
+                <div class="well well-sm">http://guoyi.synology.me:5005</div>
+                <div class="alert alert-success" role="alert">注：如您使用个人计算机登录，在输完服务器地址后可单击地址栏右边的<span class="label label-primary">+</span>以将该地址添加至下方<span class="label label-primary">个人收藏服务器</span>列表。如此，您的服务器地址将被保存，以免去您下次登录重新输入地址之劳。反之，如您使用公共计算机，请切忌如此做！</div>
+                <img src="images/mac/4.png" class="offline-pic">
+                <li>在弹出窗口确保选择<span class="label label-success">注册用户</span>，输入您的用户名和密码，并单击<span class="label label-success">连接</span>登录。</li>
+                <div class="alert alert-success" role="alert">注：如您使用个人计算机登录，可考虑选中<span class="label label-primary">在我的钥匙串中记住此密码</span>。如此，您的用户名和密码将被保存，以免去您下次登录重新输入密码之劳。反之，如您使用公共计算机，请切忌如此做！</div>
+                <img src="images/mac/5.png" class="offline-pic">
+                <li>如连接成功，您可看到如下图所示窗口。至此，您已成功登录，并可在授权文件夹下进行所有文件操作。如未看到所示窗口，请双击桌面上的服务器快捷方式以打开。例如在下图中，该快捷方式被自动命名为<span class="label label-success">guoyi.synology.me</span>。</li>
+                <img src="images/mac/6.png" class="offline-pic">
+                <li><strong>当您完成工作，请务必如下图所示断开连接！</strong></li>
+                <div class="alert alert-success" role="alert">
+                    <p>
+                        在窗口左侧<span class="label label-primary">侧边栏</span>找到服务器，并单击<img src="images/mac/8.png" alt="Eject" class="inline-pic" id="logo">以将其推出。
+                    </p>
+                    <p><span class="label label-primary">或</span></p>
+                    <p>
+                        右键单击桌面上的服务器快捷方式（下图为<span class="label label-primary">guoyi.synology.me</span>），并单击<span class="label label-primary">推出"<em><服务器名></em>"</span>（下图为<span class="label label-primary">推出"guoyi.synology.me"</span>）。
+                    </p>
+                </div>
+                <img src="images/mac/7.png" class="offline-pic">
+            </ol>
 
 
+            <div class="footer">
+                <p>Copyright © 2014 Yi Guo Programmed.</p>
+            </div>
+        </div>
 
-	</body>
+
+
+    </body>
 </html>

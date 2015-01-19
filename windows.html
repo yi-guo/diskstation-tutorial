@@ -1,146 +1,146 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Synology DiskStation使用说明</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/jumbotron.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Synology DiskStation使用说明</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/jumbotron.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
 
-	<body>
+    <body>
 
-		<div class="container">
-			<div class="header">
-				<ul class="nav nav-pills pull-right">
-					<li><a href="index.html">主页</a></li>
-					<li><a href="http://guoyi.synology.me:5000">HTTP</a></li>
-					<li><a href="ftp://guoyi.synology.me">FTP</a></li>
-				</ul>
-				<h1>Synology</h1>
-			</div>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="http://guoyi.synology.me:5000">HTTP</a></li>
+                    <li><a href="ftp://guoyi.synology.me">FTP</a></li>
+                </ul>
+                <h1>Synology</h1>
+            </div>
 
-			<div class="panel panel-success" id="instruction">
-				<div class="panel-heading">说明</div>
-				<div class="panel-body">
-			  		访问存储服务器大致有三种方法：FTP、HTTP，和WebDAV。其中，
-			  		<ul>
-			  			<li><strong>FTP: 适合公共计算机临时访问。</strong>根据具体方法，FTP仅支持文件下载或文件的复制、粘贴、重命名、删除等基本文件操作。</li>
-			  			<li><strong>HTTP: 适合公共计算机临时访问，</strong>支持文件下载、上传、在线预览、重命名，及删除等文件操作。</li>
-			  			<li><strong>WebDAV: 适合个人计算机永久访问，</strong>在支持以上文件操作的基础上，还可以实现文件的直接预览和即时编辑。</li>
-			  		</ul>
-			  		请根据您的具体需求，在下面的列表中选择您的最适方法以查看服务器使用教程。
-				</div>
-			</div>
+            <div class="panel panel-success" id="instruction">
+                <div class="panel-heading">说明</div>
+                <div class="panel-body">
+                    访问存储服务器大致有三种方法：FTP、HTTP，和WebDAV。其中，
+                    <ul>
+                        <li><strong>FTP: 适合公共计算机临时访问。</strong>根据具体方法，FTP仅支持文件下载或文件的复制、粘贴、重命名、删除等基本文件操作。</li>
+                        <li><strong>HTTP: 适合公共计算机临时访问，</strong>支持文件下载、上传、在线预览、重命名，及删除等文件操作。</li>
+                        <li><strong>WebDAV: 适合个人计算机永久访问，</strong>在支持以上文件操作的基础上，还可以实现文件的直接预览和即时编辑。</li>
+                    </ul>
+                    请根据您的具体需求，在下面的列表中选择您的最适方法以查看服务器使用教程。
+                </div>
+            </div>
 
-			<ul class="nav nav-tabs nav-justified" role="tablist" id="pills">
-				<li class="active"><a href="#ftp" role="tab" data-toggle="tab">FTP</a></li>
-				<li><a href="#http" role="tab" data-toggle="tab">HTTP</a></li>
-				<li><a href="#webdav" role="tab" data-toggle="tab">WebDAV</a></li>
-			</ul>
+            <ul class="nav nav-tabs nav-justified" role="tablist" id="pills">
+                <li class="active"><a href="#ftp" role="tab" data-toggle="tab">FTP</a></li>
+                <li><a href="#http" role="tab" data-toggle="tab">HTTP</a></li>
+                <li><a href="#webdav" role="tab" data-toggle="tab">WebDAV</a></li>
+            </ul>
 
-			<div class="tab-content">
-				<div class="tab-pane active" id="ftp">
-					</br>
-					<h4><strong>FTP方法一：仅支持文件下载</strong></h4>
-					<ol>
-						<li>左键单击本页右上角的<span class="label label-success">FTP</span>。</li>
-						<img src="images/windows/ftp/1.1.png" class="offline-pic">
-						<li>在弹出窗口输入您的用户名和密码，并敲击<span class="label label-success">回车</span>以登录。</li>
-						<img src="images/windows/ftp/1.2.png" class="offline-pic">
-					</ol>
-					</br>
-					<h4><strong>FTP方法二：支持复制、粘贴、重命名、删除等文件操作</strong></h4>
-					<ol>
-						<li>在桌面环境下，左键双击<span class="label label-success">计算机</span>。</li>
-						<img src="images/windows/ftp/2.1.png" class="offline-pic">
-						<li>在<span class="label label-success">地址栏</span>输入服务器FTP链接地址。</li>
-						<div class="well well-sm">ftp://guoyi.synology.me</div>
-						<img src="images/windows/ftp/2.2.png" class="offline-pic">
-						<li>在弹出窗口输入您的用户名和密码，并敲击<span class="label label-success">回车</span>登录。</li>
-						<div class="alert alert-danger" role="alert">注：如您在公共计算机登录，请勿选中<span class="label label-success">保存密码</span>。</div>
-						<img src="images/windows/ftp/2.3.png" class="offline-pic">
-					</ol>
-				</div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="ftp">
+                    </br>
+                    <h4><strong>FTP方法一：仅支持文件下载</strong></h4>
+                    <ol>
+                        <li>左键单击本页右上角的<span class="label label-success">FTP</span>。</li>
+                        <img src="images/windows/ftp/1.1.png" class="offline-pic">
+                        <li>在弹出窗口输入您的用户名和密码，并敲击<span class="label label-success">回车</span>以登录。</li>
+                        <img src="images/windows/ftp/1.2.png" class="offline-pic">
+                    </ol>
+                    </br>
+                    <h4><strong>FTP方法二：支持复制、粘贴、重命名、删除等文件操作</strong></h4>
+                    <ol>
+                        <li>在桌面环境下，左键双击<span class="label label-success">计算机</span>。</li>
+                        <img src="images/windows/ftp/2.1.png" class="offline-pic">
+                        <li>在<span class="label label-success">地址栏</span>输入服务器FTP链接地址。</li>
+                        <div class="well well-sm">ftp://guoyi.synology.me</div>
+                        <img src="images/windows/ftp/2.2.png" class="offline-pic">
+                        <li>在弹出窗口输入您的用户名和密码，并敲击<span class="label label-success">回车</span>登录。</li>
+                        <div class="alert alert-danger" role="alert">注：如您在公共计算机登录，请勿选中<span class="label label-success">保存密码</span>。</div>
+                        <img src="images/windows/ftp/2.3.png" class="offline-pic">
+                    </ol>
+                </div>
 
-				<div class="tab-pane" id="http">
-					</br>
-					<ol>
-						<li>左键单击本页右上角的<span class="label label-success">HTTP</span>，</li>
-						<strong>或</strong>在任意浏览器<span class="label label-success">地址栏</span>输入服务器HTTP链接地址。
-						<div class="well well-sm">http://guoyi.synology.me:5000</div></li>
-						<img src="images/windows/http/1.png" class="offline-pic">
-						<li>输入您的用户名和密码，并敲击<span class="label label-success">回车</span>以登录。</li>
-						<img src="images/windows/http/2.png" class="offline-pic">
-						<li>左键单击<span class="label label-success">File Station</span>。</li>
-						<img src="images/windows/http/3.png" class="offline-pic">
-					</ol>	
-				</div>
+                <div class="tab-pane" id="http">
+                    </br>
+                    <ol>
+                        <li>左键单击本页右上角的<span class="label label-success">HTTP</span>，</li>
+                        <strong>或</strong>在任意浏览器<span class="label label-success">地址栏</span>输入服务器HTTP链接地址。
+                        <div class="well well-sm">http://guoyi.synology.me:5000</div></li>
+                        <img src="images/windows/http/1.png" class="offline-pic">
+                        <li>输入您的用户名和密码，并敲击<span class="label label-success">回车</span>以登录。</li>
+                        <img src="images/windows/http/2.png" class="offline-pic">
+                        <li>左键单击<span class="label label-success">File Station</span>。</li>
+                        <img src="images/windows/http/3.png" class="offline-pic">
+                    </ol>   
+                </div>
 
-				<div class="tab-pane" id="webdav">
-					</br>
-					<div class="alert alert-danger" role="alert" id="off-list-alert">
-						本方法将映射服务器至您的本地计算机。首次配置安装需重新启动计算机，请您保存当前文件，并关闭其他应用程序。
-					</div>
-					<ol>
-						<li>通过FTP或HTTP方法访问服务器<span class="label label-success">公共 / WebDAV</span>文件夹。（本节示例采用FTP方法二）</li>
-						<li>将<span class="label label-success">install.bat</span>和<span class="label label-success">Webfldrs-KB907306-CHS.exe</span>下载至桌面。</li>
-						<img src="images/windows/webdav/1.png" class="offline-pic">
-						<li>右键单击<span class="label label-success">install.bat</span>，并点击<span class="label label-success">以管理员身份运行</span>。</li>
-						<div class="alert alert-danger" role="alert">
-							注：请确保<span class="label label-success">install.bat</span>和<span class="label label-success">Webfldrs-KB907306-CHS.exe</span>在同一目录下。
-						</div>
-						<img src="images/windows/webdav/2.png" class="offline-pic">
-						<div class="alert alert-success" role="alert">
-							若出现如下图所示，则说明系统配置成功。按任意键退出即可。
-						</div>
-						<img src="images/windows/webdav/3.png" class="offline-pic">
-						<li>重新启动计算机</li>
-						<li>重新启动后，左键双击<span class="label label-success">计算机</span>。</li>
-						<img src="images/windows/webdav/4.png" class="offline-pic">
-						<li>点击<span class="label label-success">映射网络驱动器</span>。</li>
-						<img src="images/windows/webdav/5.png" class="offline-pic">
-						<li>点击<span class="label label-success">连接到可用于存储文档和图片的网站</span>。</li>
-						<img src="images/windows/webdav/6.png" class="offline-pic">
-						<li>点击<span class="label label-success">下一步</span>。</li>
-						<img src="images/windows/webdav/7.png" class="offline-pic">
-						<li>选中<span class="label label-success">选择自定义网络位置</span>，并点击<span class="label label-success">下一步</span>。</li>
-						<img src="images/windows/webdav/8.png" class="offline-pic">
-						<li>在<span class="label label-success">Internet地址或网络地址</span>栏输入服务器WebDAV链接地址，并点击<span class="label label-success">下一步</span>。</li>
-						<div class="well well-sm">http://guoyi.synology.me:5005</div>
-						<img src="images/windows/webdav/9.png" class="offline-pic">
-						<li>在弹出窗口中输入您的用户名和密码，勾选<span class="label label-success">记住我的凭据</span>，并点击<span class="label label-success">确定</span>。</li>
-						<img src="images/windows/webdav/10.png" class="offline-pic">
-						<li>在<span class="label label-success">请输入该网络位置的名称</span>栏输入<span class="label label-primary">DiskStation</span>并点击<span class="label label-success">下一步</span>。</li>
-						<img src="images/windows/webdav/11.png" class="offline-pic">
-						<li>点击<span class="label label-success">完成</span>。</li>
-						<img src="images/windows/webdav/12.png" class="offline-pic">
-						<li>关闭所有窗口，并重新打开<span class="label label-success">计算机</span>。</li>
-						<div class="alert alert-success" role="alert">
-							如下图所示，DiskStation即为远程服务器映射在您本地计算机上的快捷方式。双击DiskStation，您即可像操作本地磁盘一样进行文件的新建、编辑、删除等操作。
-						</div>
-						<img src="images/windows/webdav/13.png" class="offline-pic">
-					</ol>
-				</div>
-			</div>
+                <div class="tab-pane" id="webdav">
+                    </br>
+                    <div class="alert alert-danger" role="alert" id="off-list-alert">
+                        本方法将映射服务器至您的本地计算机。首次配置安装需重新启动计算机，请您保存当前文件，并关闭其他应用程序。
+                    </div>
+                    <ol>
+                        <li>通过FTP或HTTP方法访问服务器<span class="label label-success">公共 / WebDAV</span>文件夹。（本节示例采用FTP方法二）</li>
+                        <li>将<span class="label label-success">install.bat</span>和<span class="label label-success">Webfldrs-KB907306-CHS.exe</span>下载至桌面。</li>
+                        <img src="images/windows/webdav/1.png" class="offline-pic">
+                        <li>右键单击<span class="label label-success">install.bat</span>，并点击<span class="label label-success">以管理员身份运行</span>。</li>
+                        <div class="alert alert-danger" role="alert">
+                            注：请确保<span class="label label-success">install.bat</span>和<span class="label label-success">Webfldrs-KB907306-CHS.exe</span>在同一目录下。
+                        </div>
+                        <img src="images/windows/webdav/2.png" class="offline-pic">
+                        <div class="alert alert-success" role="alert">
+                            若出现如下图所示，则说明系统配置成功。按任意键退出即可。
+                        </div>
+                        <img src="images/windows/webdav/3.png" class="offline-pic">
+                        <li>重新启动计算机</li>
+                        <li>重新启动后，左键双击<span class="label label-success">计算机</span>。</li>
+                        <img src="images/windows/webdav/4.png" class="offline-pic">
+                        <li>点击<span class="label label-success">映射网络驱动器</span>。</li>
+                        <img src="images/windows/webdav/5.png" class="offline-pic">
+                        <li>点击<span class="label label-success">连接到可用于存储文档和图片的网站</span>。</li>
+                        <img src="images/windows/webdav/6.png" class="offline-pic">
+                        <li>点击<span class="label label-success">下一步</span>。</li>
+                        <img src="images/windows/webdav/7.png" class="offline-pic">
+                        <li>选中<span class="label label-success">选择自定义网络位置</span>，并点击<span class="label label-success">下一步</span>。</li>
+                        <img src="images/windows/webdav/8.png" class="offline-pic">
+                        <li>在<span class="label label-success">Internet地址或网络地址</span>栏输入服务器WebDAV链接地址，并点击<span class="label label-success">下一步</span>。</li>
+                        <div class="well well-sm">http://guoyi.synology.me:5005</div>
+                        <img src="images/windows/webdav/9.png" class="offline-pic">
+                        <li>在弹出窗口中输入您的用户名和密码，勾选<span class="label label-success">记住我的凭据</span>，并点击<span class="label label-success">确定</span>。</li>
+                        <img src="images/windows/webdav/10.png" class="offline-pic">
+                        <li>在<span class="label label-success">请输入该网络位置的名称</span>栏输入<span class="label label-primary">DiskStation</span>并点击<span class="label label-success">下一步</span>。</li>
+                        <img src="images/windows/webdav/11.png" class="offline-pic">
+                        <li>点击<span class="label label-success">完成</span>。</li>
+                        <img src="images/windows/webdav/12.png" class="offline-pic">
+                        <li>关闭所有窗口，并重新打开<span class="label label-success">计算机</span>。</li>
+                        <div class="alert alert-success" role="alert">
+                            如下图所示，DiskStation即为远程服务器映射在您本地计算机上的快捷方式。双击DiskStation，您即可像操作本地磁盘一样进行文件的新建、编辑、删除等操作。
+                        </div>
+                        <img src="images/windows/webdav/13.png" class="offline-pic">
+                    </ol>
+                </div>
+            </div>
 
-			<script>
-				$(function () {
-					$('#pills a:first').tab('show')
-				})
-			</script>
+            <script>
+                $(function () {
+                    $('#pills a:first').tab('show')
+                })
+            </script>
 
-			<div class="footer">
-				<p>Copyright © 2014 Yi Guo Programmed.</p>
-			</div>
-		</div>
+            <div class="footer">
+                <p>Copyright © 2014 Yi Guo Programmed.</p>
+            </div>
+        </div>
 
 
 
-	</body>
+    </body>
 </html>
